@@ -1,0 +1,9 @@
+C:\RootFolder1\PageObjectModel\PageClassLib\obj\Debug\netstandard2.0\PageClassLib.csprojAssemblyReference.cache
+C:\RootFolder1\PageObjectModel\PageClassLib\obj\Debug\netstandard2.0\PageClassLib.AssemblyInfoInputs.cache
+C:\RootFolder1\PageObjectModel\PageClassLib\obj\Debug\netstandard2.0\PageClassLib.AssemblyInfo.cs
+C:\RootFolder1\PageObjectModel\PageClassLib\obj\Debug\netstandard2.0\PageClassLib.csproj.CoreCompileInputs.cache
+C:\RootFolder1\PageObjectModel\PageClassLib\bin\Debug\netstandard2.0\PageClassLib.deps.json
+C:\RootFolder1\PageObjectModel\PageClassLib\bin\Debug\netstandard2.0\PageClassLib.dll
+C:\RootFolder1\PageObjectModel\PageClassLib\bin\Debug\netstandard2.0\PageClassLib.pdb
+C:\RootFolder1\PageObjectModel\PageClassLib\obj\Debug\netstandard2.0\PageClassLib.dll
+C:\RootFolder1\PageObjectModel\PageClassLib\obj\Debug\netstandard2.0\PageClassLib.pdb
