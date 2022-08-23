@@ -15,31 +15,63 @@ namespace PageClassTest
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-            IWebDriver driver = new ChromeDriver (@"C:\Root Folder\WebDriver");
-            driver.Navigate().GoToUrl("http://www.webdriveruniversity.com/");
-            driver.Manage().Window.Maximize(); 
-            driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(10); 
+      IWebDriver driver;
 
-          PageClassLib.HomePage page =new PageClassLib.HomePage(driver);
-           page.DCRbtns();
+        
+
+        [TestInitialize]
     
+
+        public void start_Browser()
+
+        {
+            driver = new ChromeDriver(@"C:\Root Folder\WebDriver");
+          driver.Navigate().GoToUrl("http://www.webdriveruniversity.com/");
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(10);
+         
+            PageClassLib.DCRPage dcrpage =new PageClassLib.DCRPage(driver);
         }
         [TestMethod]
+        [Ignore]
+        public void TestMethod1()
+        {
+           PageClassLib.HomePage  homepage =new PageClassLib.HomePage(driver);
+           homepage.DCRbtns();
+           
+        }
+        [TestMethod]
+
         public void TestMethod2()
         {
-            IWebDriver driver = new ChromeDriver (@"C:\Root Folder\WebDriver");
-            driver.Navigate().GoToUrl("http://www.webdriveruniversity.com/");
-            driver.Manage().Window.Maximize(); 
-            driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(10); 
           PageClassLib.HomePage  homepage =new PageClassLib.HomePage(driver);
-           homepage.DCRbtns();
           PageClassLib.DCRPage dcrpage =new PageClassLib.DCRPage(driver);
+          homepage.DCRbtns();
+          Thread.Sleep(4000);
+          var newWindowHandle = driver.WindowHandles[1];
+          Assert.IsTrue(!string.IsNullOrEmpty(newWindowHandle));
+          string expectedNewWindowTitle = "WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)" ;
+          Assert.AreEqual(driver.SwitchTo().Window(newWindowHandle).Title, expectedNewWindowTitle);
+           Thread.Sleep(4000);
+          dcrpage.yellowbtn();
+          Thread.Sleep(4000);
+          dcrpage.LanguageDD();
+          Thread.Sleep(4000);
+          dcrpage.IDEDD();       
+          Thread.Sleep(4000);
 
-          dcrpage.bluebtn();
     
+        }
+        
+
+        [TestCleanup]
+
+        public void close_Browser()
+
+        {
+
+            driver.Quit();
+
         }
 
 

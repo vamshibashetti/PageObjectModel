@@ -97,3 +97,6 @@ C:\RootFolder1\PageObjectModel\PageClassTest\obj\Debug\netcoreapp3.1\PageClassTe
 C:\RootFolder1\PageObjectModel\PageClassTest\obj\Debug\netcoreapp3.1\PageClassTest.dll
 C:\RootFolder1\PageObjectModel\PageClassTest\obj\Debug\netcoreapp3.1\PageClassTest.pdb
 C:\RootFolder1\PageObjectModel\PageClassTest\obj\Debug\netcoreapp3.1\PageClassTest.genruntimeconfig.cache
+C:\RootFolder1\PageObjectModel\PageClassTest\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\RootFolder1\PageObjectModel\PageClassTest\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\RootFolder1\PageObjectModel\PageClassTest\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
